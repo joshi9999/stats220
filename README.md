@@ -1,1 +1,1 @@
-# stats220
+# https://github.com/joshi9999/stats220

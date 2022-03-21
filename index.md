@@ -1,5 +1,6 @@
+## Here is the Meme I created using R
 ![pooh_meme](https://user-images.githubusercontent.com/100745257/159168351-f0b7a8ff-0d22-48dd-8bd7-30f86b62bfb2.jpg)
-
+## Below is the code used to create this meme is you want to replicate it
 ```
 library(magick)
 
@@ -45,3 +46,7 @@ pooh_meme <- c(first_row, second_row, third_row) %>%
   
 image_write(pooh_meme, "pooh_meme.png")
 ```
+## Information about my meme
+I created this meme based off the popular Winnie the Pooh meme series as I always thought it was quite funny. I tried to create a meme that is relatable to alot of uni students as I thought it would be more fun. 
+
+I believe this meme is new/original as the idea was created by myself and hopefully no one has created something similar to what I have done!

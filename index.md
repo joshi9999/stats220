@@ -1,8 +1,8 @@
 ## Here is the Meme I created using R
-![pooh_meme](https://user-images.githubusercontent.com/100745257/159168351-f0b7a8ff-0d22-48dd-8bd7-30f86b62bfb2.jpg)
+![pooh_meme](pooh_meme1.png)
 ## Below is the code used to create this meme is you want to replicate it
 ```
-library(magick)
+llibrary(magick)
 
 normal_pooh <- image_read("https://uploads.dailydot.com/2019/04/apathetic_winnie-the_pooh.gif?auto=compress&fm=gif&ixlib=php-3.3.0"
 ) %>%
@@ -11,6 +11,13 @@ tuxedo_pooh <- image_read("https://uploads.dailydot.com/2019/04/tuxedo_winnie_th
 image_scale(500)
 monocle_pooh <- image_read("https://cdn.drawception.com/drawings/2zLQXLyKZm.png") %>%
 image_scale(500)
+
+title <- image_blank(width = 1500, height = 100, color = "#5BE520") %>% 
+  image_annotate(text="Stats 220 Assignment 1 is released",
+                 color = "#000000",
+                 size = 40,
+                 font = "Serif",
+                 gravity = "center")
 early <- image_blank(width = 1000,
 height = 500,
 color = "#C33618") %>%
@@ -41,10 +48,15 @@ color = "#C33618") %>%
                            image_append()
                          third_row <- c(monocle_pooh, late) %>%
                            image_append()
-pooh_meme <- c(first_row, second_row, third_row) %>%
+pooh_meme <- c(title, first_row, second_row, third_row) %>%
               image_append(stack = TRUE)
-  
-image_write(pooh_meme, "pooh_meme.png")
+
+
+# add border
+pooh_meme1 <- image_border(image_background(pooh_meme, "blue"), "#ffffff", "20x20") %>%
+  image_border("#DC950E", "10x10")
+pooh_meme1
+image_write(pooh_meme1, "pooh_meme1.png")
 ```
 ## Information about my meme
 I created this meme based off the popular Winnie the Pooh meme series as I always thought it was quite funny. I tried to create a meme that is relatable to alot of uni students as I thought it would be more fun. 

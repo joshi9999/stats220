@@ -1,6 +1,6 @@
 ![pooh_meme](https://user-images.githubusercontent.com/100745257/159168351-f0b7a8ff-0d22-48dd-8bd7-30f86b62bfb2.jpg)
 
-
+```
 library(magick)
 
 normal_pooh <- image_read("https://uploads.dailydot.com/2019/04/apathetic_winnie-the_pooh.gif?auto=compress&fm=gif&ixlib=php-3.3.0"
@@ -44,3 +44,4 @@ pooh_meme <- c(first_row, second_row, third_row) %>%
               image_append(stack = TRUE)
   
 image_write(pooh_meme, "pooh_meme.png")
+```

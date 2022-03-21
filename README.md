@@ -16,6 +16,6 @@ Below are information that are required for Assignment 1!
 My favorite website is [Netflix](https://netflix.com)
 ## Favourite Images
 ### Here is one I made
-![pooh_meme]
+![pooh_meme](https://github.com/joshi9999/stats220/blob/main/pooh_meme.png)
 ### Here is one I found
 ![Milford Sound](https://www.fodors.com/wp-content/uploads/2018/11/01_Milfordsound101_WhereisitExactly%EF%80%A5_shutterstock_1019010355.jpg)

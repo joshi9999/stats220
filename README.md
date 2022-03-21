@@ -8,9 +8,13 @@ Below are information that are required for Assignment 1!
 ```
 ## Favourite Fruits
 1. **Apple**
-2. **Pear**
+    1. **Granny Smith**
+    2. **Rose**
+3. **Pear**
 ## Favourite Animals
 - *Dog*
+    - *Labrador*
+    - *Husky*
 - *Cat*
 ## My favourite website
 My favorite website is [Netflix](https://netflix.com)
